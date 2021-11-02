@@ -117,7 +117,8 @@ func getAuthor(feed *gofeed.Feed) string {
   // Thus, below should return some variation of the item author as seen above.
   
   if feed.Items[0].Author != nil {
-    return feed.Items[0].Author.Name
+    return feed.Items[0].Author
+    //return feed.Items[0].Author.Name
   }
   
   log.Printf("Could not determine author for %v", feed.Link)
