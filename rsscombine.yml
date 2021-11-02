@@ -1,5 +1,6 @@
 title: My Technical RSS Feed
-link: http://wherethisfeedishosted.com/feed
+#link: http://wherethisfeedishosted.com/feed
+link: https://rsscombine-ng4.herokuapp.com
 description: This is a personal collection of technical RSS feeds.
 author_name: John Doe
 author_email: john@example.com
