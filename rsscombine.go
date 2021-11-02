@@ -108,6 +108,16 @@ func getAuthor(feed *gofeed.Feed) string {
   /*if feed.Author != nil {
     return feed.Author.Name
   }*/
+
+  fmt.Println("asdfasdfsadfasdfasdfasdfasdfasdfasdfasdfasasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfdfasdf")
+  fmt.Println(feed.Author.Name)
+  fmt.Println(feed.Items[0].Author.Name)
+  TitleType := fmt.Sprintf("%T", feed.Title)
+  fmt.Println(TitleType)
+  fmt.Println(feed.Title)
+  fmt.Println("zxcvzxcvzxcvzxcvzxcvzxcvzxcvzxzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvcvzxcvzxcv")  
+  
+  return feed.Title
   
   // In the first <item> element of https://rsshub-nog.herokuapp.com/755/user/...
   // the <author> tag is:
@@ -115,13 +125,6 @@ func getAuthor(feed *gofeed.Feed) string {
   //   <![CDATA[ #山崎怜奈 ]]>
   // </author>
   // Thus, below should return some variation of the item author as seen above.
-  fmt.Println("asdfasdfsadfasdfasdfasdfasdfasdfasdfasdfasasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfdfasdf")
-  fmt.Println(feed.Author.Name)
-  fmt.Println(feed.Items[0].Author.Name)
-  //fmt.Println(feed.Title)
-  TitleType := fmt.Sprintf("%T", feed.Title)
-  fmt.Println(TitleType)
-  fmt.Println("zxcvzxcvzxcvzxcvzxcvzxcvzxcvzxzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvcvzxcvzxcv")
   
   if feed.Items[0].Author != nil {
     return feed.Items[0].Author.Name
