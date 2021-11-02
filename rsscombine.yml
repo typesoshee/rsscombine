@@ -8,4 +8,4 @@ port: 8080
 cache_timeout_seconds: 60
 feeds:
 #  - https://rsshub-nog.herokuapp.com/755/user/yamazaki-rena
-  - https://lorem-rss.herokuapp.com/feed?unit=second&interval=30
+  - http://rss.cnn.com/rss/cnn_topstories.rss
