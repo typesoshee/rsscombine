@@ -9,5 +9,5 @@ cache_timeout_seconds: 60
 feeds:
   - https://rsshub-nog.herokuapp.com/755/user/yamazaki-rena
   - https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/world/rss.xml
-  - https://www.buzzfeed.com/world.xml
-  - https://www.cnbc.com/id/100727362/device/rss/rss.html
+#  - https://www.buzzfeed.com/world.xml
+#  - https://www.cnbc.com/id/100727362/device/rss/rss.html
