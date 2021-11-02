@@ -114,9 +114,12 @@ func getAuthor(feed *gofeed.Feed) string {
   // <author>
   //   <![CDATA[ #山崎怜奈 ]]>
   // </author>
+  // Thus, below should return some variation of the item author as seen above.
+  
   if feed.Items[0].Author != nil {
     return feed.Items[0].Author.Name
   }
+  
   log.Printf("Could not determine author for %v", feed.Link)
   return viper.GetString("default_author_name")
 }
