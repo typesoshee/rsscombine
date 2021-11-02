@@ -109,6 +109,11 @@ func getAuthor(feed *gofeed.Feed) string {
     return feed.Author.Name
   }*/
 
+  // Using feed.Title 
+  if feed.Title != nil {
+    return feed.Title
+  }
+  
   fmt.Println("asdfasdfsadfasdfasdfasdfasdfasdfasdfasdfasasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfdfasdf")
   fmt.Println(feed.Author.Name)
   fmt.Println(feed.Items[0].Author.Name)
@@ -117,7 +122,7 @@ func getAuthor(feed *gofeed.Feed) string {
   fmt.Println(feed.Title)
   fmt.Println("zxcvzxcvzxcvzxcvzxcvzxcvzxcvzxzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvcvzxcvzxcv")  
   
-  return feed.Title
+  // Below, feed.Items[0].Author.Name seems to not work sometimes
   
   // In the first <item> element of https://rsshub-nog.herokuapp.com/755/user/...
   // the <author> tag is:
