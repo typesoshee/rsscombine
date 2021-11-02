@@ -1,21 +1,10 @@
 title: My Technical RSS Feed
-#link: http://wherethisfeedishosted.com/feed
-link: https://rsscombine-ng4.herokuapp.com/feed
+link: http://wherethisfeedishosted.com/feed
 description: This is a personal collection of technical RSS feeds.
 author_name: John Doe
 author_email: john@example.com
 port: 8080
-server_timeout_seconds: 60
-client_timeout_seconds: 60
 cache_timeout_seconds: 3600
-#s3_bucket: rsscombine
-#s3_filename: engineering-manager-blogs.xml
-#feed_urls: https://raw.githubusercontent.com/chase-seibert/new-york-times-rss-top-100/master/README.md
-#feed_exclude_prefixes:
-#  - https://raw.githubusercontent.com/
-#  - https://github.com/chase-seibert/rsscombine
-#  - https://engineering-manager-blogs.herokuapp.com/
-#  - https://s3-us-west-2.amazonaws.com/rsscombine/
 feeds:
   - http://feeds.feedburner.com/TechCrunch
   - http://feeds.arstechnica.com/arstechnica/technology-lab
