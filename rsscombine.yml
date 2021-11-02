@@ -1,9 +1,9 @@
-title: Nogi 755 RSS Feed
+title: Nogi Weibo RSS Feed
 #link: http://wherethisfeedishosted.com/feed
 link: https://rsscombine-ng-weibo.herokuapp.com/
-description: This is a Nogi 755 RSS feed.
-author_name: Nogi 755
-author_email: Nogi@755
+description: This is a Nogi Weibo RSS feed.
+author_name: Nogi Weibo
+author_email: Nogi@Weibo
 port: 8080
 cache_timeout_seconds: 3600
 feeds:
