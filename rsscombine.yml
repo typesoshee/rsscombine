@@ -7,4 +7,4 @@ author_email: john@example.com
 port: 8080
 cache_timeout_seconds: 3600
 feeds:
-  - https://rss.nytimes.com/services/xml/rss/nyt/MostViewed.xml
+  - https://rsshub-nog.herokuapp.com/755/user/yamazaki-rena
