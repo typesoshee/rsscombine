@@ -115,10 +115,16 @@ func getAuthor(feed *gofeed.Feed) string {
   //   <![CDATA[ #山崎怜奈 ]]>
   // </author>
   // Thus, below should return some variation of the item author as seen above.
+  fmt.Println("asdfasdfsadfasdfasdfasdfasdfasdfasdfasdfasasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfdfasdf")
+  fmt.Println(feed.Author.Name)
+  fmt.Println(feed.Items[0].Author.Name)
+  //fmt.Println(feed.Title)
+  TitleType := fmt.Sprintf("%T", feed.Title)
+  fmt.Println(TitleType)
+  fmt.Println("zxcvzxcvzxcvzxcvzxcvzxcvzxcvzxzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvcvzxcvzxcv")
   
   if feed.Items[0].Author != nil {
-    return feed.Items[0].Author
-    //return feed.Items[0].Author.Name
+    return feed.Items[0].Author.Name
   }
   
   log.Printf("Could not determine author for %v", feed.Link)
