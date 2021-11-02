@@ -8,3 +8,4 @@ port: 8080
 cache_timeout_seconds: 3600
 feeds:
   - https://rsshub-nog.herokuapp.com/755/user/yamazaki-rena
+  - https://rsshub-nog.herokuapp.com/755/user/shinuchi-mai
