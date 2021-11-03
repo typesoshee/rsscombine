@@ -5,7 +5,7 @@ description: This is a Nogi 755 RSS feed.
 author_name: Nogi 755
 author_email: Nogi@755
 port: 8080
-cache_timeout_seconds: 120
+cache_timeout_seconds: 600
 feeds:
   - https://rsshub-nog.herokuapp.com/755/user/model-press
   - https://rsshub-nog.herokuapp.com/755/user/mynavi-news
