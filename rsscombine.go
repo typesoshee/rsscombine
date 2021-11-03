@@ -114,6 +114,7 @@ func getAuthor(feed *gofeed.Feed) string {
     return feed.Title
   }
   
+  /*
   fmt.Println("asdfasdfsadfasdfasdfasdfasdfasdfasdfasdfasasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfdfasdf")
   fmt.Println(feed.Author.Name)
   fmt.Println(feed.Items[0].Author.Name)
@@ -121,6 +122,7 @@ func getAuthor(feed *gofeed.Feed) string {
   fmt.Println(TitleType)
   fmt.Println(feed.Title)
   fmt.Println("zxcvzxcvzxcvzxcvzxcvzxcvzxcvzxzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvcvzxcvzxcv")  
+  */
   
   // Below, feed.Items[0].Author.Name seems to not work sometimes
   
