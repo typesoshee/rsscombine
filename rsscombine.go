@@ -109,10 +109,12 @@ func getAuthor(feed *gofeed.Feed) string {
     return feed.Author.Name
   }*/
 
+  /*
   // Using feed.Title. If the string feed.Title is not empty:
   if feed.Title != "" {
     return feed.Title
   }
+  */
   
   /*
   fmt.Println("asdfasdfsadfasdfasdfasdfasdfasdfasdfasdfasasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfdfasdf")
