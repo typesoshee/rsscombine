@@ -5,7 +5,7 @@ description: This is a Nogi Weibo RSS feed.
 author_name: Nogi Weibo
 author_email: Nogi@Weibo
 port: 8080
-cache_timeout_seconds: 3600
+cache_timeout_seconds: 120
 feeds:
   - https://rsshub-nog.herokuapp.com/weibo/user/6372196907/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=0&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1
   - https://rsshub-nog.herokuapp.com/weibo/user/7266841339/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=0&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1
@@ -69,4 +69,5 @@ feeds:
   - https://rsshub-nog.herokuapp.com/weibo/user/5546145590/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=0&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1
   - https://rsshub-nog.herokuapp.com/weibo/user/7558981076/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=0&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1
   - https://rsshub-nog.herokuapp.com/weibo/user/6607671219/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=0&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1
+  - https://rsshub-nog.herokuapp.com/weibo/user/2811699412/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweet=0&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1
 
