@@ -1,12 +1,13 @@
 title: My Technical RSS Feed
 #link: http://wherethisfeedishosted.com/feed
-link: https://rsscombine-ng4.herokuapp.com
+link: https://rsscombine-ng4-test.herokuapp.com
 description: This is a personal collection of technical RSS feeds.
 author_name: John Doe
 author_email: john@example.com
 port: 8080
-cache_timeout_seconds: 3600
+cache_timeout_seconds: 60
 feeds:
-#  - https://rsshub-nog.herokuapp.com/755/user/yamazaki-rena
-  - https://rsshub-nog.herokuapp.com/755/user/shinuchi-mai
-  - https://rsshub-nog.herokuapp.com/755/user/wada-maaya
+  - https://rsshub-nog.herokuapp.com/755/user/yamazaki-rena
+#  - https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/world/rss.xml
+  - https://www.buzzfeed.com/world.xml
+  - https://www.cnbc.com/id/100727362/device/rss/rss.html

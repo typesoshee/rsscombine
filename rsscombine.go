@@ -107,6 +107,10 @@ func getAuthor(feed *gofeed.Feed) string {
     return feed.Items[0].Author.Name
   }
   log.Printf("Could not determine author for %v", feed.Link)
+  
+  // Entered below line to see if it prevents rss xml error
+  return "default_auth_name"
+  
   return viper.GetString("default_author_name")
 }
 
