@@ -100,12 +100,45 @@ func (s byPublished) Less(i, j int) bool {
 }
 
 func getAuthor(feed *gofeed.Feed) string {
-  if feed.Author != nil {
+  // Commenting out below. There seems to be no feed.Author in https://rsshub-nog.herokuapp.com/755/user/...
+  // since there is no <author> element in the <description> element, and according to https://github.com/mmcdole/gofeed
+  // the feed.Author will then default /rss/channel/webMaster where in rsshub-nog.herokuapp.com/755/user/... the element is:
+  // <webMaster>i@diygod.me (DIYgod)</webMaster>
+
+  /*if feed.Author != nil {
     return feed.Author.Name
+  }*/
+
+  
+  // Using feed.Title. If the string feed.Title is not empty:
+  if feed.Title != "" {
+    return feed.Title
   }
+  
+  
+  /*
+  fmt.Println("asdfasdfsadfasdfasdfasdfasdfasdfasdfasdfasasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfdfasdf")
+  fmt.Println(feed.Author.Name)
+  fmt.Println(feed.Items[0].Author.Name)
+  TitleType := fmt.Sprintf("%T", feed.Title)
+  fmt.Println(TitleType)
+  fmt.Println(feed.Title)
+  fmt.Println("zxcvzxcvzxcvzxcvzxcvzxcvzxcvzxzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvzxcvcvzxcvzxcv")  
+  */
+  
+  // Below, feed.Items[0].Author.Name seems to not work sometimes
+  
+  // In the first <item> element of https://rsshub-nog.herokuapp.com/755/user/...
+  // the <author> tag is:
+  // <author>
+  //   <![CDATA[ #山崎怜奈 ]]>
+  // </author>
+  // Thus, below should return some variation of the item author as seen above.
+  
   if feed.Items[0].Author != nil {
     return feed.Items[0].Author.Name
   }
+  
   log.Printf("Could not determine author for %v", feed.Link)
   return viper.GetString("default_author_name")
 }
